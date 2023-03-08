@@ -18,20 +18,33 @@ public class RemoveDuplicatesFromSortedArray {
 //    }
 
     public static   void main(String[] args) {
-        int[] nums = {0,0,1,1,1,2,2,3,3,4};
+        int[] nums = {0,0,1,1,1,2,2,3,3,4,6,7,7,7,8};
         int result;
         removeDuplicates(nums);
     }
     public static void removeDuplicates(int[] nums) {
+        int flag=0;
         for (int i=0;i<nums.length;i++) {
 //            System.out.println(nums[i]);
                 for(int j=i+1;j<nums.length;j++){
                     if(nums[i]==nums[j]){
-
+                        System.out.println("same"+nums[i]);
+//                        for(int k=j+1;k<nums.length;k++){
+//                            flag=nums[j];
+//                            nums[j]=nums[k];
+//
+//                        }
+                        //nums[nums.length-1]=flag;
                     }
                 }
 
         }
+     //   System.out.println(nums);
+        // Using a for loop to iterate through the elements of the array
+//        for (int i = 0; i < nums.length; i++) {
+//            System.out.print(nums[i] + " ");
+//        }
+
     }
 }
 
