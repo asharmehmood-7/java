@@ -1,6 +1,14 @@
 package org.example.binary_search.problems;
 
 public class Ceiling {
+//    public static void main(String[] args) {
+//
+//        int[] arr = {14,16,17,18,19};
+//        int target = 15;
+//        int ans = ceiling(arr,target);
+//        System.out.println(ans);
+//    }
+
     public static void main(String[] args) {
 
         int[] arr = {14,16,17,18,19};
