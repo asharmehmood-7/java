@@ -2,9 +2,44 @@ package org.example.patterns;
 
 public class Patterns {
     public static void main(String[] args) {
-        pattern5(5);
+        pattern10(5);
 
     }
+
+
+
+    static void pattern10(int n){
+
+        for (int row = 1; row<=n; row++){
+            int spaces = n - row;
+            for (int col=1; col<=spaces;col++){
+                System.out.print(" ");
+            }
+            for (int col2=1;col2<=row;col2++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+//    static void pattern28(int n){
+//
+//        for (int row = 1; row<= (2*n)-1;row++){
+//
+//            for (int space = 0; space <= n-row;space++){
+//                System.out.println(" ");
+//            }
+//
+//            for(int col = 1; col<= row; col++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//
+//
+//    }
+
+
 
     static void pattern5(int n) {
         int count = 1;
@@ -53,8 +88,7 @@ public class Patterns {
         for (int row = 1; row <= n; row++) {
 
             for (int col = 0; col <= n - row; col++) {
-                System.out.print("* ");
-            }
+                System.out.print("* ");            }
             System.out.println();
         }
     }
@@ -63,8 +97,7 @@ public class Patterns {
         for (int row = 1; row <= n; row++) {
 
             for (int col = 1; col <= row; col++) {
-                System.out.print(col);
-            }
+                System.out.print(col);            }
             System.out.println();
         }
     }
