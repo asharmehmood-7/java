@@ -25,14 +25,14 @@ public class Employee implements  Comparable<Employee> {
         return contactno;
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
-                ", empid=" + empid +
-                ", contactno='" + contactno + '\'' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Employee{" +
+//                "name='" + name + '\'' +
+//                ", empid=" + empid +
+//                ", contactno='" + contactno + '\'' +
+//                '}';
+//    }
 
     // Setters
     public void setName(String name) {

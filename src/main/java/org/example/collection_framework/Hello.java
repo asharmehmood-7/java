@@ -1,7 +1,9 @@
 package org.example.collection_framework;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Vector;
 
 public class Hello {
     public static void main(String[] args) {
@@ -61,5 +63,18 @@ public class Hello {
         names.clear();
 
         System.out.println(names);
+
+        Vector<String> vector = new Vector<>();
+        vector.addAll(names);
+        System.out.println("vector " + vector);
+        System.out.println("------------------------------------------------------");
+
+
+        HashSet<Double> nms = new HashSet<>();   // no primitive types here   //the Double wrapper class provides an object representation of the double primitive type,
+        nms.add(14.14);
+//        nms.add(new Double(232.3));
+
+
+
     }
 }
