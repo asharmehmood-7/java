@@ -1,9 +1,6 @@
 package org.example.collection_framework;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Vector;
+import java.util.*;
 
 public class Hello {
     public static void main(String[] args) {
@@ -73,6 +70,24 @@ public class Hello {
         HashSet<Double> nms = new HashSet<>();   // no primitive types here   //the Double wrapper class provides an object representation of the double primitive type,
         nms.add(14.14);
 //        nms.add(new Double(232.3));
+        nms.add(34.1245);
+        nms.add(234.1245);
+        nms.add(392.2);
+        System.out.println(nms);   // elements are not in order , as it is a hashset
+        //nms.get // does'nt exsist
+
+
+        TreeSet<Double> tset = new TreeSet<>();
+        tset.addAll(nms);
+        tset.add(6.0);
+        System.out.println(tset);   // treeset is sorted
+
+
+        LinkedHashSet<Double> lhset = new LinkedHashSet<>();
+        lhset.addAll(nms);
+        System.out.println(lhset);
+
+        // traversing
 
 
 
